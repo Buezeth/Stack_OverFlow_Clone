@@ -1,0 +1,97 @@
+
+header {
+    height: 52px;
+    background: #fff;
+    border-top: 3px solid var(--header-top-border-color);
+    border-bottom: 1px solid var(--header-bottom-border-color);
+    font-size: 0.75rem;
+    width: 100vw;
+    position: fixed;
+    margin-bottom: 52px;
+    z-index: 100;
+}
+
+header .nav-bar {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 50px 150px 1.75fr 5fr 130px;
+    align-items: center;
+    place-items: center;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.menu-bar {
+    font-size: 1rem;
+    color: var(--menu-bar-bg-color);
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 50px; */
+}
+
+.logo-and-name img {
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.search-bar input {
+    width: 95%;
+    height: 32px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--header-bottom-border-color);
+}
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    color: var(--header-bottom-border-color);
+    font-size: 1rem;
+}
+.search-bar input:focus {
+    border: none;
+    outline: 1px solid var(--btn-bg-color);
+}
+.login-signup {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.login button, .signup button {
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+}
+.login button {
+    width: 56px;
+    background-color: #fff;
+    border: 1px solid var(--btn-bg-color);
+    color:  var(--btn-bg-color);
+}
+.signup button {
+    width: 66px;
+    background-color:  var(--btn-bg-color);
+    /* border: 1px solid #fff; */
+    color: #d6e8fa;
+}

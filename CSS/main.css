@@ -1,0 +1,21 @@
+@import url("./navigation-bar.css");
+@import url("./section1.css");
+
+:root {
+    --main-bg-color: #f9fafa;
+    --hero-bg-color: #0c0d0e;
+    --header-top-border-color: #e7700d;
+    --header-bottom-border-color: #d6d9dc;
+    --menu-bar-bg-color: #636b74;
+    --btn-bg-color: #155ca2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
