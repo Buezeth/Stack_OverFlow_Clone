@@ -1,0 +1,61 @@
+
+.section-2 {
+    position: relative;
+    z-index: 4;
+    top: -250px;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2 h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.75rem;
+}
+
+.section-2 .rect-1 {
+    border-radius: 10px;
+    background: linear-gradient(white, #f2af78);
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 51px 0;
+}
+
+
+
+.rect-logo img{
+    width: 35%;
+}
+
+.rect-btn button {
+    width: 211px;
+    height: 43px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background: #cc7b0d;
+}
+
+.rect-btn button:hover {
+    background: #ea7110;
+}
+
+.rect-search, .rect-search a {
+    font-size: 0.75rem;
+    color: #926b75;
+}
+
+.rect-search a:hover {
+    color: var(--btn-bg-color-2);
+}
+
+.rect-text {
+    width: 80%;
+    font-size: 1.2rem;
+    color: #926b75;
+}

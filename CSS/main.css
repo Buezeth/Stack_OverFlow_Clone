@@ -1,5 +1,13 @@
 @import url("./navigation-bar.css");
 @import url("./section1.css");
+@import url("./section2.css");
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 
 :root {
     --main-bg-color: #f9fafa;
@@ -7,7 +15,8 @@
     --header-top-border-color: #e7700d;
     --header-bottom-border-color: #d6d9dc;
     --menu-bar-bg-color: #636b74;
-    --btn-bg-color: #155ca2;
+    --btn-bg-color: #1b75d0;
+    --btn-bg-color-2: #cc7b0d;
 }
 
 * {
@@ -17,5 +26,10 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Roboto Slab", serif;
 }
