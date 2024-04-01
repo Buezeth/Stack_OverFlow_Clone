@@ -5,28 +5,27 @@ header {
     border-top: 3px solid var(--header-top-border-color);
     border-bottom: 1px solid var(--header-bottom-border-color);
     font-size: 0.75rem;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     margin-bottom: 52px;
     z-index: 100;
 }
 
 header .nav-bar {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     display: grid;
-    grid-template-columns: 50px 150px 1.75fr 5fr 130px;
+    grid-template-columns: 50px 150px 1.75fr 5fr 1fr;
     align-items: center;
     place-items: center;
     max-width: 1250px;
     margin: 0 auto;
     height: 100%;
+
 }
 
 .menu-bar {
-    font-size: 1rem;
     color: var(--menu-bar-bg-color);
+    font-size: 1.1rem;
+    /* padding-inline: 50px; */
 }
 
 .nav-links {
@@ -39,7 +38,26 @@ header .nav-bar {
     /* grid-template-columns: repeat(3, 1fr); */
     align-items: center;
     justify-content: space-evenly;
-    /* gap: 50px; */
+    gap: 3px;
+    flex-wrap: nowrap;
+}
+
+.nav-links ul li {
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    text-wrap: nowrap;
+}
+
+.nav-links ul li:hover, .logo-and-name:hover {
+    background: #e3e6e8;
+    cursor: pointer;
+}
+
+.logo-and-name {
+    border-radius: 5px;
+    padding: 6px 10px;
+    /* height: 100%; */
 }
 
 .logo-and-name img {
@@ -56,7 +74,7 @@ header .nav-bar {
 .search-bar input {
     width: 95%;
     height: 32px;
-    padding-left: 30px;
+    padding-left: 35px;
     border-radius: 5px;
     border: 1px solid var(--header-bottom-border-color);
 }
@@ -73,8 +91,9 @@ header .nav-bar {
     outline: 1px solid var(--btn-bg-color);
 }
 .login-signup {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
+    /* padding-right: 50px; */
     gap: 5px;
 }
 
@@ -94,4 +113,20 @@ header .nav-bar {
     background-color:  var(--btn-bg-color);
     /* border: 1px solid #fff; */
     color: #d6e8fa;
+}
+
+
+/*==============================================*/
+/*==============Responsive Designe==============*/
+/*==============================================*/
+
+
+@media screen and (max-width: 816px){
+   .nav-hide {
+    display: none;
+   }
+
+   header .nav-bar {
+    grid-template-columns: 50px 175px 1fr 5fr 1fr;
+    }
 }

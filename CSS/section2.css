@@ -7,6 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 32px;
+    width: 100%;
 }
 
 .section-2 h1 {
@@ -14,10 +16,11 @@
     font-size: 1.75rem;
 }
 
-.section-2 .rect-1 {
+.section-2 .rect-1, .section-2 .rect-2 {
     border-radius: 10px;
-    background: linear-gradient(white, #f2af78);
     width: 520px;
+    /* max-width: calc(100% - 700px); */
+    height: 857px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,36 +29,107 @@
     padding: 51px 0;
 }
 
+.section-2 .rect-1 {
+    background: linear-gradient(white, #f2af78);
+}
 
 
-.rect-logo img{
+
+button:hover {
+    cursor: pointer;
+}
+
+.rect-1 .rect-logo img{
     width: 35%;
 }
 
 .rect-btn button {
     width: 211px;
     height: 43px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     border: none;
+}
+
+.rect-1 .rect-btn button {
     background: #cc7b0d;
 }
 
-.rect-btn button:hover {
+.rect-1 .rect-btn button:hover {
     background: #ea7110;
 }
 
-.rect-search, .rect-search a {
+.rect-1 .rect-search, .rect-search a {
     font-size: 0.75rem;
     color: #926b75;
 }
 
-.rect-search a:hover {
+.rect-1 .rect-search a:hover {
     color: var(--btn-bg-color-2);
 }
 
 .rect-text {
     width: 80%;
     font-size: 1.2rem;
-    color: #926b75;
+    color: #3B4045;
 }
+
+
+.section-2 .rect-2 {
+    background: linear-gradient(white, #92c2f2);
+}
+
+.rect-2 .rect-btn button {
+    background: var(--btn-bg-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rect-2 .rect-btn {
+    display: flex;
+    gap: 8px;
+}
+
+.rect-img {
+    max-width: 520px;
+    /* min-height: 346px; */
+}
+.rect-img img{
+    width: 100%;
+    height: auto;
+}
+
+.rect-topic {
+    width: 80%;
+}
+
+
+/*==============================================*/
+/*==============Responsive Designe==============*/
+/*==============================================*/
+
+
+@media screen and (max-width: 1300px){
+    .section-2 .rect-1, .section-2 .rect-2 {
+        width: 40%;
+    }    
+    
+}
+@media screen and (max-width: 816px){
+
+    .section-2 {
+        flex-wrap: wrap;
+    }
+
+    .section-2 .rect-1, .section-2 .rect-2 {
+        width: 552px;
+    }
+
+ }
+ 
+ @media screen and (max-width: 640px) {
+    
+ }
