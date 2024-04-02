@@ -27,6 +27,7 @@
     align-items: center;
     text-align: center;
     padding: 51px 0;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2) ;
 }
 
 .section-2 .rect-1 {
@@ -44,8 +45,9 @@ button:hover {
 }
 
 .rect-btn button {
-    width: 211px;
+    max-width: 211px;
     height: 43px;
+    padding: 0 20px;
     border-radius: 5px;
     color: white;
     border: none;
@@ -116,20 +118,24 @@ button:hover {
     .section-2 .rect-1, .section-2 .rect-2 {
         width: 40%;
     }    
+
     
 }
-@media screen and (max-width: 816px){
 
+@media screen and (max-width: 816px){
     .section-2 {
         flex-wrap: wrap;
     }
-
-    .section-2 .rect-1, .section-2 .rect-2 {
-        width: 552px;
-    }
-
- }
- 
- @media screen and (max-width: 640px) {
     
- }
+    .section-2 .rect-1, .section-2 .rect-2 {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .section-2 .rect-1, .section-2 .rect-2 {
+        width: 85%;
+    }
+    
+}

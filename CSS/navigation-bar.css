@@ -121,12 +121,24 @@ header .nav-bar {
 /*==============================================*/
 
 
-@media screen and (max-width: 816px){
-   .nav-hide {
-    display: none;
-   }
 
-   header .nav-bar {
-    grid-template-columns: 50px 175px 1fr 5fr 1fr;
+@media screen and (max-width: 1300px) {
+
+}
+
+@media screen and (max-width: 816px){
+    
+    header .nav-bar {
+        grid-template-columns: 50px 175px 1fr 5fr 1fr;
+    }
+
+    .nav-links .nav-hide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .search-bar .nav-hide {
+     display: none;
     }
 }

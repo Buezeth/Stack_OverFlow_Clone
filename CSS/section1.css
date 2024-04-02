@@ -9,10 +9,10 @@ main {
 
 .section-1 {
     /* background: var(--hero-bg-color); */
-    background: linear-gradient(rgba(0,0,0,1) , rgba(0,0,0,0.7));
+    background: linear-gradient(rgba(0,0,0,1) , rgba(0,0,0,0.8));
     margin: 0;
-    width: 95vw;
-    border-radius: 15px;
+    width: 94vw;
+    border-radius: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-top: 48px;
@@ -26,18 +26,19 @@ main {
 .hero-bg {
     display: flex;
     /* width: 100%; */
-    justify-content: space-around;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
 }
 
 .left-text-shape, .right-text-shape {
     height: 253px;
     width: 442px;
-    padding: 15px 0;
+    padding: 16px 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     position: relative;
@@ -74,13 +75,18 @@ main {
     color: #fff;
     font-size: 2.3rem;
     text-align: center;
-    width: 50%;
+    width: 70%;
     margin: 50px auto;
 }
 
 .message-text .changing-text {
     display: inline-block;
+    text-wrap: nowrap;
     color: #e7700d;
+}
+.nowrap {
+    display: inline-block;
+    text-wrap: nowrap;
 }
 
 .seperator {
@@ -91,7 +97,7 @@ main {
 }
 
 .records {
-    width: 60%;
+    /* width: 60%; */
     margin: 50px auto;
     display: flex;
     color: #fff;
@@ -100,7 +106,7 @@ main {
     text-align: center;
     gap: 20px;
     justify-content: space-evenly;
-    
+    /* flex-wrap: nowrap; */
 }
 .records .record-item {
     height: 150px;
@@ -114,14 +120,13 @@ main {
 
 .section-1::after {
     content: "";
-    width: 98vw;
-    height: 25vh;
+    width: 100vw;
+    height: 200px;
     background: white;
     position: absolute;
-    /* border-radius: 50%; */
     border-top-left-radius: 50% 200px;
     border-top-right-radius: 50% 200px;
-    bottom: -9.7%;
+    bottom: -7%;
 }
 
 .text-button-1 button, .text-button-2 button {
@@ -130,6 +135,8 @@ main {
     border-radius: 10px;
     color: white;
     border: none;
+    text-wrap: wrap;
+    font-size: 15px;
 }
 
 .text-button-2 button {
@@ -149,7 +156,7 @@ main {
 
 .hero-bg .text {
     font-size: 1.2rem;
-    width: 70%;
+    width: 80%;
 }
 
 .right-text-shape svg {
@@ -164,17 +171,65 @@ main {
 }
 
 
+
 /*==============================================*/
 /*==============Responsive Designe==============*/
 /*==============================================*/
 
 
+
+@media screen and (max-width: 1300px) {
+    
+    .section-1 {
+        width: 91vw;
+    }
+    .left-text-shape, .right-text-shape {
+        width: 40%;
+        height: 275px;
+    }
+    .records {
+        width: 90%;
+    }
+
+    .message-text {
+        width: 80%;
+    }
+    
+}
+
 @media screen and (max-width: 816px){
 
- }
+    .left-text-shape, .right-text-shape {
+        height: 300px;
+    }
+
+    main {
+        padding-top: 80px;
+    }
+    .records {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    
+    .records .record-item {
+        width: 90%;
+        height: auto;
+        padding: 16px 0;
+    }
+}
+
+
  
- @media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
     .hero-bg {
         flex-wrap: wrap;
     }
- }
+    .left-text-shape, .right-text-shape {
+        width: 90%;
+    }
+
+    .message-text {
+        width: 50%;
+        font-size: 1.35rem;
+    }
+}
