@@ -135,10 +135,35 @@ header .nav-bar {
     .nav-links .nav-hide {
         display: none;
     }
+    .login-signup {
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .search-bar .nav-hide {
      display: none;
+    }
+
+    .search-bar i {
+        /* position: relative; */
+        left: 55%;
+        /* top: 5px; */
+        color: black;
+        padding: 10px 5px;
+        font-size: 1.25rem;
+    }
+
+    .search-bar i:hover {
+        background: #e3e6e8;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .show-search-bar {
+        position: absolute;
+        width: 90vw !important;
+        top: 20px;
+        left: -55vw;
     }
 }

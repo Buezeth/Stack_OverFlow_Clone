@@ -7,5 +7,6 @@ console.log(changingText);
 
 let change = ["game developer", "mobile developer", "developer", "data scientist"];
 
-const tl = gsap.timeline({repeat:3, repeatDelay:1, yoyo:true});
-tl.to(changingText, {duration: 4,  text:" is so much fun you should try it some time!"});
+// const tl = gsap.timeline({delay:0.6, repeat:2, repeatDelay:4});
+// tl.to(changingText, {duration: 4,  text: change[2]});
+

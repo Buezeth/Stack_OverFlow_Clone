@@ -170,7 +170,38 @@ main {
     color: #3B4045;
 }
 
+.changing-text::before {
+    content: "developer";
+    animation: changeText infinite 10s;
+}
 
+.changing-text {
+    animation: move infinite 2.5s 0.76s;
+}
+
+@keyframes changeText {
+    0% {
+        content: "developer";
+    }
+    25% {
+        content: "game developer";
+    }
+    50% {
+        content: "mobile developer";
+    }
+    75% {
+        content: "data scientist";
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, -5px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+}
 
 /*==============================================*/
 /*==============Responsive Designe==============*/
