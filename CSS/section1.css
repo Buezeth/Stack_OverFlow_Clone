@@ -29,6 +29,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 32px;
+    z-index: 3;
 }
 
 .left-text-shape, .right-text-shape {
@@ -179,6 +180,23 @@ main {
     animation: move infinite 2.5s 0.76s ease-out;
 }
 
+
+.deco-div {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* bottom: 150px; */
+}
+
+.deco-div .deco-1, .deco-div .deco-2 {
+    position: absolute;
+    z-index: 1;
+}
+.deco-div .deco-1 {
+    top: 250px;
+}
 
 @keyframes changeText {
     0% {
