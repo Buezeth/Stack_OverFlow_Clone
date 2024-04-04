@@ -176,8 +176,9 @@ main {
 }
 
 .changing-text {
-    animation: move infinite 2.5s 0.76s;
+    animation: move infinite 2.5s 0.76s ease-out;
 }
+
 
 @keyframes changeText {
     0% {
@@ -196,10 +197,12 @@ main {
 
 @keyframes move {
     0% {
-        transform: translate(0, -5px);
+        transform: translate(0, -10px);
+        opacity: 0.1;
     }
     50% {
         transform: translate(0, 0);
+        opacity: 1;
     }
 }
 
