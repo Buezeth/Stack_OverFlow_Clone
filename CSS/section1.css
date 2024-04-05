@@ -122,12 +122,12 @@ main {
 .section-1::after {
     content: "";
     width: 100vw;
-    height: 200px;
+    height: 150px;
     background: white;
     position: absolute;
     border-top-left-radius: 50% 200px;
     border-top-right-radius: 50% 200px;
-    bottom: -7%;
+    bottom: -7.7%;
 }
 
 .text-button-1 button, .text-button-2 button {
