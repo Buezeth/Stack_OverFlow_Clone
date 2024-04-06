@@ -1,21 +1,26 @@
 .section-4 {
     width: 100vw;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .three-img {
     display: flex;
     position: relative;
     justify-content: center;
-    width: 100%;
+    width: 75%;
 }
 
 .three-img img {
-    width: 319px;
+    /* max-width: 319px; */
+    max-width: 25%;
     height: auto;
     z-index: 10;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 2px 3px 5px rgba(0,0,0,0.2);
 }
 
@@ -30,8 +35,9 @@
 
 .img-2 img{
     height: auto;
-    width: 100%;
-    object-fit: fill;
+    max-width: 479px;
+    /* max-width: 100%; */
+    /* object-fit: fill; */
 }
 
 .img-3 {
@@ -69,15 +75,132 @@
 
 
 .main-section-4 {  
-     z-index: 2;
-    background: linear-gradient(rgba(0,0,0,1) , rgba(0,0,0,0.8));
+     z-index: 10;
+     /* position: absolute; */
+    background: linear-gradient(rgba(0,0,0,1) , hsl(210, 8%, 25%));
     margin: 0 auto;
     width: 90%;
     border-radius: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
+    /* overflow-y: hidden; */
     flex-direction: column;
     height: 1000px;
     align-items: center;
+    /* top: 194%; */
+}
+
+.main-section-4-logo {
+    margin-top: 5%;
+}
+
+.main-section-4 .head-text {
+    color: white;
+    /* width: 70%; */
+    /* padding: 0px 158px 32px; */
+    text-align: center;
+    font-size: 1.12rem;
+}
+
+.main-section-4 .head-text span {
+    color: var(--btn-bg-color-2);
+}
+
+.take-atour-btn button{
+    width: 200px;
+    height: 43px;
+    color: white;
+    font-size: 0.85rem;
+    background: var(--btn-bg-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.advantages-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 30px;
+    text-align: center;
+    color: white;
+}
+
+.advantages-texts .text-heading {
+    font-size: 0.9rem !important;
+}
+
+.advantages-texts .text-description {
+    color: #91969c;
+}
+
+.advantages-texts div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.ensure-div {
+    width: 60%;
+    border-top: 0.1px solid #91969c67;
+    color: white;
+    text-align: center;
+    padding: 64px 0 0;
+}
+
+.ensure-div h1 {
+    font-size: 2.1rem;
+}
+.ensure-div p {
+    font-size: 1.2rem;
+}
+
+/*==============================================*/
+/*==============Responsive Designe==============*/
+/*==============================================*/
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .three-img {
+        width: 100%;
+    }
+
+    .three-img img {
+        max-width: 25%;
+    }
+
+    .img-2 img{
+        max-width: 100%;
+    }
+    .img-2 {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 816px){
+    .three-img {
+        top: 90px;
+    }
+}
+
+
+ 
+@media screen and (max-width: 640px) {
+    .three-img .img-1, .three-img .img-3 {
+        display: none;
+    }
+    .three-img {
+        top: 0px;
+    }
+    .img-2 img{
+        max-width: 200%;
+    }
 }
