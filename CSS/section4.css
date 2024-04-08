@@ -86,7 +86,7 @@
     display: flex;
     /* overflow-y: hidden; */
     flex-direction: column;
-    height: 1000px;
+    height: auto;
     align-items: center;
     /* top: 194%; */
 }
@@ -121,14 +121,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    gap: 30px;
+    padding-inline: 5%;
+    width: 100%;
+    /* gap: 30px; */
     text-align: center;
     color: white;
 }
 
 .advantages-texts .text-heading {
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
+}
+
+.text-description {
+    font-size: 1.06rem;
 }
 
 .advantages-texts .text-description {
@@ -136,11 +141,15 @@
 }
 
 .advantages-texts div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     gap: 10px;
-    align-items: center;
+}
+
+.advantage-1 {
+    display: flex;    
+    flex-direction: column;
+    margin: 24px;
+    max-width: 319px;
+    height: auto;
 }
 
 
@@ -157,6 +166,74 @@
 }
 .ensure-div p {
     font-size: 1.2rem;
+}
+
+.tools-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0 0;
+    margin: -6px 378px 128px 378px;
+}
+.tool {
+    margin: 6px;
+    padding: 32px 0;
+    width: 161px;
+    text-align: center;
+    color: #f9fafa;
+}
+.tool:hover {
+    background: #0c0d0e;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.tool svg {
+    fill: #a1a7ad;
+}
+.tool h3 {
+    padding: 24px 32px 0;
+}
+.tool p {
+    padding: 0 24px;
+    margin: 0 0 17px;
+}
+.hidden-text {
+    display: none;
+}
+.svg-fill {
+    fill: #1b75d0 !important;
+}
+.selected-tool {
+    margin: 6px;
+    padding: 32px 0;
+    width: 324px !important;
+    text-align: center;
+    background: #3b4045;
+    border-radius: 10px;
+    color: #f9fafa;
+}
+.selected-tool:hover {
+    background: #3b4045;
+}
+
+.billing {
+    display: flex;
+    flex-direction: column;
+}
+
+.offers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.offer-1 {
+    height: 560px;
+    width: 342px;
+    background: white;
+    border-radius: 5px;
 }
 
 /*==============================================*/
