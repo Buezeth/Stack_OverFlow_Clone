@@ -35,3 +35,14 @@ body {
 h1, h2, h3 {
     font-family: "Roboto Slab", serif;
 }
+
+button {
+    width: 211px;
+    height: 43px;
+    border-radius: 10px;
+    /* color: white; */
+    border: none;
+    /* text-wrap: wrap; */
+    font-size: 15px;
+}
+

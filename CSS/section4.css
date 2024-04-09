@@ -221,12 +221,17 @@
     flex-direction: column;
 }
 
+.annual-billing {
+    margin: 0 0 24px;
+    color: white;
+}
+
 .offers {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 24px;
 }
 
 .offer-1 {
@@ -234,8 +239,164 @@
     width: 342px;
     background: white;
     border-radius: 5px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+
 }
 
+.offer-type {
+    background: #e7700d;
+    height: 30px;
+    width: 46px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: white;
+    margin: 0 0 17px;
+}
+
+.basic .offer-type {
+    width: 53px;
+    background: #c8ccd0;
+    color: black;
+}
+.business .offer-type {
+    width: 78px;
+    background: #3b4045;
+}
+.enterprise .offer-type {
+    width: 89px;
+    background: #2b2d6e;
+}
+
+.free .offer-price {
+    border-bottom: 1px solid #e7700d;
+}
+.offer-price {
+    margin: 0 0 24px;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #e3e6e8;
+}
+.offer-price h2 {
+    font-size: 1.7rem;
+}
+.offer-price p, .offer-team-size p {
+    color: #c6b5b4;
+    padding: 0;
+    font-size: 0.94rem;
+}
+
+.options {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 12px;
+    
+}
+.options div {
+    margin: 0 12px 0 0;
+    padding-top: 3px;
+}
+.options svg {
+    width: 18px !important;
+    fill: black !important;
+}
+.options p {
+    font-size: 0.94rem;
+}
+.seperation-div {
+    margin: 100px 0px 0px;
+}
+.get-offer-btn {
+    /* margin: 100px 0px 0px; */
+    margin-inline: auto;
+}
+.basic .seperation-div {
+    margin: 47px 0px 0px;
+}
+.business .seperation-div {
+    margin: -12px;
+}
+.enterprise .seperation-div {
+    margin: 1px;
+}
+
+.get-offer-btn button {
+    background: var(--btn-bg-color-2);
+    width: 292px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: white;
+    margin: 24px 0 0;
+    /* padding: 12px 32px; */
+}
+.basic .get-offer-btn button {
+    background: #c8ccd0;
+    color: #0c3b6a;
+}
+.business .get-offer-btn button {
+    background: #3b4045;
+}
+.enterprise .get-offer-btn button {
+    background: #181a47;
+}
+.offer-team-size  {
+    margin-inline: auto;
+}
+.offer-team-size p {
+    padding: 12px 0 0;
+}
+.business .special {
+    color: #bfc3c9;
+}
+.business .special svg {
+    fill: #bfc3c9 !important;
+}
+.enterprise .special {
+    color: #626a73;
+}
+.enterprise .special svg {
+    fill: #626a73 !important;
+}
+
+
+
+.justifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -12px 273px 32px;
+    padding: 24px;
+    gap: 24px;
+}
+
+.justify {
+    border: 2px solid #3d4042;
+    border-radius: 10px;
+    width: 280px;
+    height: 153px;
+    padding: 24px;
+    text-align: center;
+    font-size: 1.07rem;
+    color: white;
+}
+.justify span {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.31rem;
+    padding: 0 4px;
+    font-weight: 700;
+    color: #1b75d0;
+}
+
+.justify button {
+    width: 183.8px;
+    height: 43.3px;
+    border: 1px solid #1b75d0;
+    background: none;
+    color: #1b75d0;
+    margin: 16px 0 0;
+    /* padding: 12px 32px; */
+    font-size: 1rem;
+}
 /*==============================================*/
 /*==============Responsive Designe==============*/
 /*==============================================*/
