@@ -1,5 +1,9 @@
 .testimonials {
     display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
     /* justify-content: ; */
     margin: 0 226px;
     padding: 64px 64px 128px;
@@ -27,3 +31,19 @@
     border-top: 1px solid #e3e6e8;
     padding: 16px 0 0;
 }
+
+/*==============================================*/
+/*==============Responsive Designe==============*/
+/*==============================================*/
+
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1003px) {
+    .testimonials {
+        margin-top: 200px;
+    }
+    .testimonial-1 {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 816px){}
+@media screen and (max-width: 640px) {}

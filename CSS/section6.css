@@ -1,8 +1,10 @@
 .section-6 {
     background-image: url("https://cdn.sstatic.net/Img/home/illo-about-left.png?v=586391c9162b"),url("https://cdn.sstatic.net/Img/home/illo-about-right.png?v=209eaa986298");
-    background-repeat: no-repeat,no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 27% auto;
+    background-attachment: auto;
+    width: 100%;
     
 }
 
@@ -16,11 +18,13 @@
 }
 
 .section-6 h2 {
-    margin: 0 582px 0 582px;
+    /* margin: 0 582px 0 582px; */
+    margin: 0 auto;
     padding: 24px 24px 0;
     font-size: 1.7rem;
     font-weight: 400;
     text-align: center;
+    max-width: 737px;
 }
 
 .advertising-collective-talent {
@@ -28,8 +32,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 32px 530px;
-    /* width: 847px; */
+    margin: 32px auto;
+    /* margin: 32px calc(100% - 80vw); */
+    max-width: 847px;
 }
 
 .advertising-collective-talent a {

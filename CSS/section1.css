@@ -77,13 +77,16 @@ main {
     color: #fff;
     font-size: 2.3rem;
     text-align: center;
-    width: 70%;
+    width: 1743px;
+    max-width: 70%;
+    min-width: 435px;
     margin: 50px auto;
 }
 
 .message-text .changing-text {
     display: inline-block;
     text-wrap: nowrap;
+    text-align: center;
     color: #e7700d;
 }
 .nowrap {
@@ -175,6 +178,7 @@ main {
 .changing-text::before {
     content: "developer";
     animation: changeText infinite 10s;
+    text-wrap: nowrap;
 }
 
 .changing-text {
