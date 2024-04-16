@@ -1,0 +1,92 @@
+.section-7 {
+    background: #0c3b6a;
+    margin: -93px 48px 0;
+    padding: 32px 0 96px;
+    width: 94vw;
+    border-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.technical-topics {
+    display: flex;
+}
+.technical-topics .center {
+    padding: 64px 32px;
+    text-align: center;
+    color: white;
+}
+.technical-topics .technical-logo {
+    margin: 0 0 32px;
+    padding: 0 0 32px;
+}
+.technical-topics .technical-logo svg {
+    fill: #fff !important;
+}
+.technical-topics .center h2 {
+    margin: 0 79px 24px 79px;
+    font-size: 2.15rem;
+    font-weight: 400;
+}
+.technical-topics .center p {
+    margin: 0 79px 32px 79px;
+    font-size: 1.1rem;
+}
+.technical-topics .center button {
+    border-radius: 5px;
+    padding: 12px 32px;
+    background: #ffb500;
+}
+
+.technical-topics .right, .technical-topics .left {
+    position: relative;
+}
+.deco-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.pop-up-logos {
+    margin: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    height: 464px;
+    position: relative;
+    z-index: 20;
+}
+.pop-128, .pop-64, .pop-96 {
+    background: #fff;
+    border-radius: 10px;
+    margin: 24px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop-128 {
+    width: 128px;
+    height: 128px;
+}
+.pop-96 {
+    width: 96px;
+    height: 96px;
+}
+.pop-96 img {
+    width: 64px !important;
+    height: 64px !important;
+}
+.pop-64 {
+    width: 64px;
+    height: 64px;
+}
+.pop-64 img {
+    width: 32px !important;
+    height: 32px;
+}

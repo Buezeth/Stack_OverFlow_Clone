@@ -1,0 +1,29 @@
+.testimonials {
+    display: flex;
+    /* justify-content: ; */
+    margin: 0 226px;
+    padding: 64px 64px 128px;
+    color: #3b4045;
+}
+
+.testimonial-1 {
+    padding: 24px;
+    width: 330px;
+    height: 338px;
+}
+.testimonial-1 svg {
+    margin: 0 0 16px;
+    fill: var(--btn-bg-color);
+}
+.testimonial-content {
+    margin: 0 0 32px;
+    font-size: 1.05rem;
+}
+.author {
+    padding: 16px 0 0;
+    
+}
+.author b{
+    border-top: 1px solid #e3e6e8;
+    padding: 16px 0 0;
+}

@@ -1,0 +1,79 @@
+.section-6 {
+    background-image: url("https://cdn.sstatic.net/Img/home/illo-about-left.png?v=586391c9162b"),url("https://cdn.sstatic.net/Img/home/illo-about-right.png?v=209eaa986298");
+    background-repeat: no-repeat,no-repeat;
+    background-position: 0 0, 100% 0;
+    background-size: 27% auto;
+    
+}
+
+.section-6-logo {
+    margin: 0 0 12px;
+    padding: 0 0 32px;
+    border-bottom: 1px solid #e3e6e8;
+    /* display: inline-block; */
+    text-align: center;
+    /* margin-inline: auto; */
+}
+
+.section-6 h2 {
+    margin: 0 582px 0 582px;
+    padding: 24px 24px 0;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.advertising-collective-talent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 530px;
+    /* width: 847px; */
+}
+
+.advertising-collective-talent a {
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    width: 389px;
+    height: 167px;
+    padding: 32px 24px;
+    margin: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #636b74;
+    font-size: 1.12rem;
+}
+.advertising-collective-talent a:hover {
+    color: black;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+
+}
+.advertising-collective-talent a svg {
+    margin: 0 0 24px;
+}
+.end-section-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-company-btn button{
+    background: var(--btn-bg-color-2);
+    color: white;
+    border-radius: 5px;
+}
+.want-to-work {
+    text-decoration: none;
+    color: #3b4045;
+    padding: 12px 32px;
+    font-size: 0.95rem;
+}
+.want-to-work:hover {
+    background: #f1f2f3;
+    border-radius: 5px;
+}
+.want-to-work span {
+    color: var(--btn-bg-color);
+}
