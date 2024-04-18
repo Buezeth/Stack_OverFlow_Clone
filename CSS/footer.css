@@ -3,16 +3,20 @@
     color: #babfc5;
 }
 .footer-container {
-    margin: 0 319px;
+    margin: 0 auto;
     padding: 32px 12px 12px;
     display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 1264px;
+    width: 100%;
 }
 .footer-container a {
     text-decoration: none;
     color: #babfc5;
     padding: 4px 0;
     font-size: small;
-    max-width: 1264px;
     width: 100%;
 }
 .footer-container a:hover {
@@ -21,8 +25,8 @@
 .footer-nav {
     display: flex;
     flex: 2 1 auto;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 .footer-col {
     padding: 0 12px 24px 0;
@@ -38,7 +42,7 @@
     width: 64px;
 }
 .footer-copy-right {
-    width: 324px;
+    max-width: 324px;
 }
 
 .footer-copy-right ul {
@@ -51,3 +55,41 @@
     /* margin-top: auto; */
     /* margin-bottom: 24px; */
 }
+
+
+/*==============================================*/
+/*==============Responsive Designe==============*/
+/*==============================================*/
+
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 846px){
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    
+    .footer-copy-right p {
+        margin: 0 0 24px;
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 816px){
+    .footer-nav {
+        flex-direction: column;
+    }
+    .footer-col .footer-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 791px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 24px;
+    }
+    .footer-logo {
+        margin: -12px 0 32px;
+    }
+}
+@media screen and (max-width: 640px) {}

@@ -8,10 +8,26 @@
 .section-8 p {
     margin: 16px 24px;
     font-size: large;
+    text-align: center;
 }
 .section-8 button {
     background: none;
     color: var(--btn-bg-color);
     border: 1px solid var(--btn-bg-color);
     border-radius: 5px;
+}
+
+/*==============================================*/
+/*==============Responsive Designe==============*/
+/*==============================================*/
+
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 816px){}
+@media screen and (max-width: 640px) {
+    .section-8 {
+        flex-direction: column;
+    }
+    .section-8 p {
+        font-size: 0.95rem;
+    }
 }

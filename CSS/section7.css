@@ -1,6 +1,6 @@
 .section-7 {
     background: #0c3b6a;
-    margin: -93px 48px 0;
+    /* margin: -93px 48px 0; */
     padding: 32px 0 96px;
     width: 94vw;
     border-radius: 10px;
@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
 }
 .technical-topics {
     display: flex;
@@ -18,6 +19,9 @@
     padding: 64px 32px;
     text-align: center;
     color: white;
+    max-width: 845px;
+    /* width: 100%; */
+    min-width: 535px;
 }
 .technical-topics .technical-logo {
     margin: 0 0 32px;
@@ -27,13 +31,17 @@
     fill: #fff !important;
 }
 .technical-topics .center h2 {
-    margin: 0 79px 24px 79px;
+    margin: 0 auto 24px auto;
     font-size: 2.15rem;
     font-weight: 400;
+    /* width: 95%; */
+    width: 632px;
 }
 .technical-topics .center p {
-    margin: 0 79px 32px 79px;
+    margin: 0 auto 32px auto;
     font-size: 1.1rem;
+    /* width: 95%; */
+    width: 632px;
 }
 .technical-topics .center button {
     border-radius: 5px;
@@ -51,7 +59,7 @@
     z-index: 10;
 }
 .pop-up-logos {
-    margin: 40px 80px;
+    margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -89,4 +97,24 @@
 .pop-64 img {
     width: 32px !important;
     height: 32px;
+}
+
+
+/*==============================================*/
+/*==============Responsive Designe==============*/
+/*==============================================*/
+
+@media screen and (max-width: 1300px) {
+    .technical-topics .center h2, .technical-topics .center p {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 816px){}
+@media screen and (max-width: 640px) {
+    .technical-topics .center h2 {
+        font-size: 1.5rem;
+    }
+    .technical-topics .center p {
+        font-size: 1rem;
+    }
 }
